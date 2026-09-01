@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flex Layout </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgba(245, 247, 243, 0.952);
+            text-align: center;
+        }
+        main{
+            width: 960px ;
+            height: 1000px;
+            background-color: rgb(252, 251, 250);
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        header> {
+            width: 960px;
+            height: 100px;
+            background-color: rgb(252, 251, 251);
+        }
+        nav{
+            width: 960px;
+            height: 80px;
+            background-color: rgb(253, 254, 253);
+        }
+        section{
+            width: 960px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #left{
+            flex-grow: 1;
+            width: 960px;
+            background-color: rgb(245, 245, 238);
+        }
+        #right{
+            flex-grow: 2
+            background-color: rgb(255, 0, 255);
+            display: flex;
+            flex-direction: row;
+        }
+        footer{
+            width: 960px;
+            height: 50px;
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Header</h2>
+        </header>
+        <nav>
+        <h2>Navbar</h2>
+        </nav>
+        <section>
+            <div id="left"></div>
+            <div id="right">
+                <aside>
+                    
+            </div>
+        </section>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </main>
+    
+</body>
+</html>
