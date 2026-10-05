@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  background-color: #111111;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 25px;
+  background-color: #111111;
+}
+
+header h1 {
+  margin: 0;
+  letter-spacing: 5px;
+  font-size: 32px;
+}
+
+header h1 span {
+  color: #c9a45c;
+}
+
+header p {
+  color: #cccccc;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+nav {
+  padding: 16px;
+  background-color: #1d1d1d;
+}
+
+nav a {
+  margin: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #c9a45c;
+}
+
+.welcome {
+  min-height: 420px;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  
+}
+
+.welcome-text {
+  margin-left: 8%;
+}
+
+.small-heading {
+  color: #c9a45c;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.welcome h2 {
+  font-size: 52px;
+  letter-spacing: 2px;
+  margin: 15px 0;
+}
+
+.welcome-text > p:not(.small-heading) {
+  color: #dddddd;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 13px 20px;
+  background-color: #c9a45c;
+  color: #111111;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+section {
+  padding: 55px 20px;
+}
+
+section h2 {
+  margin-top: 8px;
+  font-size: 32px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 15px auto;
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+.card {
+  display: inline-block;
+  width: 250px;
+  margin: 12px;
+  padding: 15px;
+  vertical-align: top;
+  background-color: #1d1d1d;
+  border: 1px solid #343434;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #c9a45c;
+}
+
+.card p {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.plans-section {
+  background-color: #191919;
+}
+
+.plan-card {
+  min-height: 310px;
+  padding: 22px 15px;
+}
+
+.plan-card .price {
+  color: #c9a45c;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plan-card .price span {
+  color: #cccccc;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.featured {
+  border: 2px solid #c9a45c;
+}
+
+.popular {
+  color: #c9a45c !important;
+  font-size: 11px !important;
+  letter-spacing: 2px;
+}
+
+.contact-section {
+  background-color: #1d1d1d;
+}
+
+.contact-section p {
+  color: #dddddd;
+}
+
+footer {
+  padding: 20px;
+  color: #bbbbbb;
+  font-size: 12px;
+  background-color: #111111;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .welcome {
+    min-height: 350px;
+    padding: 50px 20px;
+  }
+
+  .welcome-text {
+    margin-left: 2%;
+  }
+
+  .welcome h2 {
+    font-size: 40px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
