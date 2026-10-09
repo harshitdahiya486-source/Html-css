@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Side </title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #fffaf2;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #3d5a40;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    .hero {
+      background:
+        linear-gradient(#0006, #0006),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 110px 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      background-color: #3d5a40;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #293d2c;
+    }
+
+    .about,
+    .menu,
+    .contact {
+      padding: 45px 8%;
+      text-align: center;
+    }
+
+    .menu {
+      background-color: #f2eadf;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .dish {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px #00000015;
+    }
+
+    .dish img {
+      display: block;
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .dish-text {
+      padding: 16px;
+    }
+
+    .dish-text h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #3d5a40;
+      color: white;
+      text-align: center;
+      padding: 12px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+
+      .menu-items {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sunny Side</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Good Food, Good Mood</h2>
+      <p>Experience the best of cuisine in a warm and inviting atmosphere.</p>
+      <a class="button" href="#menu">View Our Menu</a>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Welcome to Sunny Side </h2>
+      <p>
+       From our humble beginnings to becoming a beloved local spot, Romeo da Dhaba has been serving delicious meals with a smile.
+      </p>
+    </section>
+
+    <section id="menu" class="menu">
+      <h2>Our Menu</h2>
+
+      <div class="menu-items">
+        <article class="dish">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Burger with fresh toppings">
+          <div class="dish-text">
+            <h3>Garden Burger</h3>
+            <p>A juicy burger with fresh vegetables and our special sauce.</p>
+            <strong>₹250</strong>
+          </div>
+        </article>
+
+        <article class="dish">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Freshly baked pizza">
+          <div class="dish-text">
+            <h3>Margherita Pizza</h3>
+            <p>Tomato, mozzarella, and basil on a crispy crust.</p>
+            <strong>₹350</strong>
+          </div>
+        </article>
+
+        <article class="dish">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Chocolate cake">
+          <div class="dish-text">
+            <h3>Chocolate Cake</h3>
+            <p>A rich chocolate cake for a sweet treat.</p>
+            <strong>₹180</strong>
+          </div>
+        </article>
+
+        <article class="dish">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80" alt="Pasta with herbs and sauce">
+          <div class="dish-text">
+            <h3>Creamy Pasta</h3>
+            <p>Pasta tossed in a creamy sauce with herbs and parmesan.</p>
+            <strong>₹320</strong>
+          </div>
+        </article>
+
+        <article class="dish">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" alt="Fresh salad in a bowl">
+          <div class="dish-text">
+            <h3>Fresh Garden Salad</h3>
+            <p>Crisp greens, tomatoes, and cucumber with house dressing.</p>
+            <strong>₹200</strong>
+          </div>
+        </article>
+
+        <article class="dish">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80" alt="Ice cream dessert">
+          <div class="dish-text">
+            <h3>Ice Cream Sundae</h3>
+            <p>Vanilla ice cream topped with chocolate sauce.</p>
+            <strong>₹150</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Visit Us</h2>
+      <p>12 Market Street, Your City</p>
+      <p>Open daily: 10:00 AM – 10:00 PM</p>
+      <p>Call us: 98765 43210</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sunny Side Restaurant</p>
+  </footer>
+</body>
+</html>
