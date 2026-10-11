@@ -1,0 +1,819 @@
+/* ==============================
+GENERAL
+============================== */
+
+
+body {
+font-family: Arial, sans-serif;
+
+
+background-color: rgb(192, 192, 182);
+
+margin: 0;
+
+color: #222;
+
+
+}
+
+/* ==============================
+HEADER
+============================== */
+
+.header {
+
+
+background-color: rgb(96, 98, 116);
+
+margin: 20px;
+
+padding: 40px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 50px;
+
+color: white;
+
+
+}
+
+.header img {
+
+
+width: 200px;
+
+height: 220px;
+
+object-fit: cover;
+
+border-radius: 50%;
+
+border: 5px solid white;
+
+
+}
+
+.intro {
+
+
+max-width: 600px;
+
+
+}
+
+.intro h1 {
+
+
+font-size: 40px;
+
+margin-bottom: 10px;
+
+
+}
+
+.intro h2 {
+
+
+font-size: 22px;
+
+font-weight: normal;
+
+
+}
+
+.intro p {
+
+
+font-size: 17px;
+
+line-height: 1.6;
+
+
+}
+
+/* ==============================
+NAVIGATION
+============================== */
+
+.navbar {
+
+
+display: flex;
+color: white;
+
+justify-content: center;
+
+flex-wrap: wrap;
+
+gap: 40px;
+
+background-color: rgb(73, 60, 60);
+
+padding: 15px;
+
+margin: 20px;
+
+
+}
+
+.navbar a {
+
+
+color: white;
+
+text-decoration: none;
+
+font-size: 17px;
+
+padding: 5px;
+
+
+}
+
+.navbar a:hover {
+
+
+color: rgb(197, 114, 141);
+
+
+}
+
+/* ==============================
+BUTTON
+============================== */
+
+.button {
+
+
+display: inline-block;
+
+background-color: rgb(197, 114, 141);
+
+color: white;
+
+padding: 12px 20px;
+
+margin-top: 10px;
+
+text-decoration: none;
+
+border-radius: 5px;
+
+
+}
+
+.button:hover {
+
+
+background-color: rgb(150, 75, 100);
+
+
+}
+
+/* ==============================
+SECTIONS
+============================== */
+
+.section {
+
+
+background-color: white;
+
+margin: 20px;
+
+padding: 30px;
+display: flex;
+
+border: 1px solid black;
+
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+border-radius: 5px;
+
+
+}
+
+.section h2 {
+
+
+color: rgb(96, 98, 116);
+
+border-bottom: 2px solid rgb(197, 114, 141);
+
+padding-bottom: 10px;
+
+
+}
+
+/* ==============================
+TABLE
+============================== */
+
+table {
+
+
+border-color: black;
+
+
+width: 100%;
+
+
+}
+
+th {
+
+
+background-color: rgb(96, 98, 116);
+
+color: white;
+
+
+}
+
+th,
+td {
+
+
+border: 1px solid black;
+
+padding: 15px;
+
+text-align: left;
+
+
+}
+
+tr:hover {
+
+
+background-color: rgb(240, 235, 235);
+
+
+}
+
+/* ==============================
+SKILLS
+============================== */
+
+.skills-container {
+
+
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 20px;
+
+
+}
+
+.skill-box {
+
+
+flex: 1;
+
+min-width: 500px;
+
+background-color: rgb(235, 232, 225);
+
+padding: 20px;
+
+border-left: 5px solid rgb(197, 114, 141);
+
+border-radius: 8px;
+
+
+}
+
+.skill-box h3 {
+
+
+color: rgb(96, 98, 116);
+
+
+}
+
+/* ==============================
+PROJECTS
+============================== */
+
+.projects-container {
+
+
+display: flex;
+flex-direction: row;
+/* flex-wrap: wrap; */
+justify-content: center;
+align-items: center;
+gap: 10px;
+height: 100%;
+margin: 0;
+}
+
+.box {
+
+
+flex: 1;
+
+min-width: 250px;
+
+border: 1px solid black;
+
+padding: 20px;
+
+background-color: rgb(245, 243, 238);
+
+border-radius: 5px;
+
+
+}
+
+.box h3 {
+
+
+color: rgb(96, 98, 116);
+
+
+}
+
+/* PROJECT TAGS */
+
+.tag {
+
+
+display: inline-block;
+
+background-color: rgb(197, 114, 141);
+
+color: white;
+
+padding: 5px 10px;
+
+margin: 5px 3px;
+
+border-radius: 15px;
+
+font-size: 12px;
+
+
+}
+
+/* ==============================
+FORM PAGE HEADER
+============================== */
+
+.form-header {
+
+
+background-color: rgb(96, 98, 116);
+
+color: white;
+
+text-align: center;
+
+padding: 35px;
+
+margin: 20px;
+
+
+}
+
+.form-header h1 {
+
+
+font-size: 36px;
+
+margin-bottom: 10px;
+
+
+}
+
+.form-header p {
+
+
+font-size: 17px;
+
+
+}
+
+/* ==============================
+FORM CONTAINER
+============================== */
+
+.form-container {
+
+
+background-color: white;
+
+max-width: 750px;
+
+margin: 30px auto;
+
+padding: 35px;
+
+border: 1px solid black;
+
+border-radius: 8px;
+
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.form-container h2 {
+
+
+text-align: center;
+
+color: rgb(96, 98, 116);
+
+font-size: 28px;
+
+
+}
+
+.form-intro {
+
+
+text-align: center;
+
+color: #666;
+
+margin-bottom: 30px;
+
+
+}
+
+/* ==============================
+FORM GROUP
+============================== */
+
+.form-group {
+
+
+margin-bottom: 22px;
+
+
+}
+
+.form-group > label {
+
+
+display: block;
+
+font-weight: bold;
+
+margin-bottom: 8px;
+
+color: rgb(73, 60, 60);
+
+
+}
+
+/* ==============================
+INPUTS
+============================== */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+
+
+width: 100%;
+
+padding: 12px;
+
+box-sizing: border-box;
+
+border: 1px solid #aaa;
+
+border-radius: 5px;
+
+font-size: 15px;
+
+font-family: Arial;
+
+
+}
+
+textarea {
+
+
+resize: vertical;
+
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+
+outline: none;
+
+border: 2px solid rgb(197, 114, 141);
+
+
+}
+
+/* ==============================
+CHECKBOXES
+============================== */
+
+.checkbox-group {
+
+
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 15px;
+
+background-color: rgb(245, 243, 238);
+
+padding: 15px;
+
+border-radius: 5px;
+
+
+}
+
+.checkbox-group label {
+
+
+font-weight: normal;
+
+
+}
+
+/* ==============================
+RADIO BUTTONS
+============================== */
+
+.radio-group {
+
+
+display: flex;
+
+gap: 25px;
+
+background-color: rgb(245, 243, 238);
+
+padding: 15px;
+
+border-radius: 5px;
+
+
+}
+
+.radio-group label {
+
+
+font-weight: normal;
+
+
+}
+
+/* ==============================
+AGREEMENT
+============================== */
+
+.agreement {
+
+
+background-color: rgb(245, 243, 238);
+
+padding: 15px;
+
+margin-bottom: 20px;
+
+border-left: 4px solid rgb(197, 114, 141);
+
+
+}
+
+/* ==============================
+FORM BUTTONS
+============================== */
+
+.form-buttons {
+
+
+display: flex;
+
+justify-content: center;
+
+gap: 15px;
+
+
+}
+
+.submit-button,
+.reset-button {
+
+
+padding: 12px 25px;
+
+border: none;
+
+border-radius: 5px;
+
+cursor: pointer;
+
+font-size: 16px;
+
+
+}
+
+.submit-button {
+
+
+background-color: rgb(96, 98, 116);
+
+color: white;
+
+
+}
+
+.submit-button:hover {
+
+
+background-color: rgb(73, 60, 60);
+
+
+}
+
+.reset-button {
+
+
+background-color: rgb(210, 210, 210);
+
+color: black;
+
+
+}
+
+.reset-button:hover {
+
+
+background-color: rgb(180, 180, 180);
+
+
+}
+
+/* ==============================
+BACK HOME
+============================== */
+
+.back-home {
+
+
+text-align: center;
+
+margin: 25px;
+
+
+}
+
+.back-home a {
+
+
+color: rgb(197, 114, 141);
+
+text-decoration: none;
+
+font-weight: bold;
+
+
+}
+
+.back-home a:hover {
+
+
+text-decoration: underline;
+
+
+}
+
+/* ==============================
+FOOTER
+============================== */
+
+.footer {
+
+text-align: center;
+
+background-color: rgb(73, 60, 60);
+
+color: white;
+
+padding: 20px;
+
+margin-top: 20px;
+
+
+}
+
+/* ==============================
+MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 700px) {
+
+
+.header {
+
+    flex-direction: column;
+
+    text-align: center;
+
+    margin: 10px;
+
+    padding: 25px;
+}
+
+
+.intro h1 {
+
+    font-size: 30px;
+}
+
+
+.navbar {
+
+    gap: 15px;
+
+    margin: 10px;
+}
+
+
+.section {
+
+    margin: 10px;
+
+    padding: 20px;
+}
+
+
+.form-container {
+
+    margin: 20px;
+
+    padding: 20px;
+}
+
+
+.radio-group {
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.form-buttons {
+
+    flex-direction: column;
+}
+
+
+.submit-button,
+.reset-button {
+
+    width: 100%;
+}
+#retnav {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+
+}
+.img-container {
+    position: relative;
+    max-width: 100%;
+    display: inline-block;
+}
+.text-block {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: rgb(105, 4, 4);
+    font:italic;
+    font-size: 20px;
+}
+#retbutton {
+    color: rgb(230, 226, 226);
+    background-color: rgb(122, 7, 7);}
+    /* retbutton:hover {
+    background-color: rgb(149, 79, 79);
+    color: rgb(135, 52, 52);
+} */
