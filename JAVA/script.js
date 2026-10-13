@@ -26,8 +26,7 @@ let firstname="Rahul";
 let lastname="Sharma";
 
 console.log(firstname+" "+lastname);
-console.log(`${firstname}  "name" and 'lastname' is ${lastname}
-    his age is ${age}`);
+console.log(`${firstname} ${lastname} is ${age} years old.`);
 
     let marks=75
     if(marks>=80){
