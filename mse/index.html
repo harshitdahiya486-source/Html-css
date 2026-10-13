@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +21,9 @@
     </div>
 
     <a href="login.html" class="login">Login</a>
-    <a href="#products" class="cart">🛒 My Cart</a>
+    <button class="cart" id="open-cart" type="button" aria-label="Open shopping cart">
+        🛒 My Cart <span class="cart-count" id="cart-count">0</span>
+    </button>
 </header>
 
 <main>
@@ -82,12 +83,10 @@
         </div>
 
         <div class="products">
-
             <article class="product-card" id="milk">
                 <div class="product-img">
                     <span class="discount">20% OFF</span>
-                    <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=500&q=80"
-                         alt="Fresh milk">
+                    <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=500&q=80" alt="Fresh milk">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Cow Milk</h3>
@@ -101,8 +100,7 @@
             <article class="product-card" id="apples">
                 <div class="product-img">
                     <span class="discount">23% OFF</span>
-                    <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=500&q=80"
-                         alt="Fresh red apples">
+                    <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=500&q=80" alt="Fresh red apples">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Red Apples</h3>
@@ -116,8 +114,7 @@
             <article class="product-card" id="broccoli">
                 <div class="product-img">
                     <span class="discount">18% OFF</span>
-                    <img src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?auto=format&fit=crop&w=500&q=80"
-                         alt="Fresh green broccoli">
+                    <img src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?auto=format&fit=crop&w=500&q=80" alt="Fresh green broccoli">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Broccoli</h3>
@@ -131,8 +128,7 @@
             <article class="product-card" id="cookies">
                 <div class="product-img">
                     <span class="discount">20% OFF</span>
-                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=500&q=80"
-                         alt="Chocolate cookies">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=500&q=80" alt="Chocolate cookies">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Chocolate Cookies</h3>
@@ -146,8 +142,7 @@
             <article class="product-card" id="bananas">
                 <div class="product-img">
                     <span class="discount">22% OFF</span>
-                    <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=500&q=80"
-                         alt="Fresh bananas">
+                    <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=500&q=80" alt="Fresh bananas">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Bananas</h3>
@@ -161,8 +156,7 @@
             <article class="product-card" id="tomatoes">
                 <div class="product-img">
                     <span class="discount">17% OFF</span>
-                    <img src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=500&q=80"
-                         alt="Fresh tomatoes">
+                    <img src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=500&q=80" alt="Fresh tomatoes">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Tomatoes</h3>
@@ -176,8 +170,7 @@
             <article class="product-card" id="cheese">
                 <div class="product-img">
                     <span class="discount">18% OFF</span>
-                    <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=500&q=80"
-                         alt="Cheese">
+                    <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=500&q=80" alt="Cheese">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Cheese Slices</h3>
@@ -191,8 +184,7 @@
             <article class="product-card" id="juice">
                 <div class="product-img">
                     <span class="discount">17% OFF</span>
-                    <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=500&q=80"
-                         alt="Fresh orange juice">
+                    <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=500&q=80" alt="Fresh orange juice">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Orange Juice</h3>
@@ -202,7 +194,6 @@
                     <button class="add-btn" type="button">ADD +</button>
                 </div>
             </article>
-
         </div>
     </section>
 
@@ -215,18 +206,192 @@
         </div>
 
         <div class="promo-art">
-            <img
-                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80"
-                alt="Fresh grocery selection">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Fresh grocery selection">
         </div>
     </section>
 </main>
+
+<div class="cart-overlay" id="cart-overlay" aria-hidden="true">
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+        <div class="cart-header">
+            <h2 id="cart-title">Your cart</h2>
+            <button class="cart-close" id="close-cart" type="button" aria-label="Close cart">✕</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <strong>Subtotal</strong>
+            <strong id="cart-total">₹0</strong>
+        </div>
+        <p class="cart-note">Delivery charges, if any, are calculated at checkout.</p>
+    </aside>
+</div>
 
 <footer>
     <h2 class="logo">Satvik<span>Mart</span></h2>
     <p>Fresh groceries. Fair prices. Fast delivery.</p>
     <small>© 2026 SatvikMart. Demo website.</small>
 </footer>
+
+<script>
+(() => {
+    const STORAGE_KEY = 'satvikmart-cart-v1';
+
+    const readCart = () => {
+        try {
+            return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+        } catch {
+            return {};
+        }
+    };
+
+    let cart = readCart();
+
+    const overlay = document.getElementById('cart-overlay');
+    const itemList = document.getElementById('cart-items');
+    const countBadge = document.getElementById('cart-count');
+    const totalLabel = document.getElementById('cart-total');
+
+    const money = value => `₹${value.toLocaleString('en-IN')}`;
+
+    function saveCart() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
+        renderCart();
+    }
+
+    function renderCart() {
+        const entries = Object.values(cart);
+        const count = entries.reduce((sum, item) => sum + item.quantity, 0);
+        const total = entries.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+        countBadge.textContent = count;
+        countBadge.hidden = count === 0;
+        totalLabel.textContent = money(total);
+        itemList.replaceChildren();
+
+        if (!entries.length) {
+            const empty = document.createElement('p');
+            empty.className = 'cart-empty';
+            empty.textContent = 'Your cart is empty. Add a few fresh favourites!';
+            itemList.append(empty);
+            return;
+        }
+
+        entries.forEach(item => {
+            const row = document.createElement('div');
+            row.className = 'cart-line';
+
+            const info = document.createElement('div');
+            info.className = 'cart-line-info';
+
+            const name = document.createElement('strong');
+            name.textContent = item.name;
+
+            const detail = document.createElement('small');
+            detail.textContent = `${item.quantityLabel} · ${money(item.price)} each`;
+            info.append(name, detail);
+
+            const controls = document.createElement('div');
+            controls.className = 'cart-quantity';
+
+            const minus = document.createElement('button');
+            minus.className = 'qty-btn';
+            minus.type = 'button';
+            minus.textContent = '−';
+            minus.setAttribute('aria-label', `Remove one ${item.name}`);
+            minus.addEventListener('click', () => changeQuantity(item.id, -1));
+
+            const quantity = document.createElement('span');
+            quantity.textContent = item.quantity;
+
+            const plus = document.createElement('button');
+            plus.className = 'qty-btn';
+            plus.type = 'button';
+            plus.textContent = '+';
+            plus.setAttribute('aria-label', `Add one ${item.name}`);
+            plus.addEventListener('click', () => changeQuantity(item.id, 1));
+
+            controls.append(minus, quantity, plus);
+
+            const linePrice = document.createElement('strong');
+            linePrice.textContent = money(item.price * item.quantity);
+
+            row.append(info, controls, linePrice);
+            itemList.append(row);
+        });
+    }
+
+    function changeQuantity(id, amount) {
+        if (!cart[id]) return;
+
+        cart[id].quantity += amount;
+
+        if (cart[id].quantity <= 0) {
+            delete cart[id];
+        }
+
+        saveCart();
+    }
+
+    function openCart() {
+        overlay.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        document.getElementById('close-cart').focus();
+    }
+
+    function closeCart() {
+        overlay.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        document.getElementById('open-cart').focus();
+    }
+
+    document.querySelectorAll('.product-card').forEach(card => {
+        const button = card.querySelector('.add-btn');
+
+        button.addEventListener('click', () => {
+            const id = card.id;
+            const name = card.querySelector('h3').textContent.trim();
+            const quantityLabel = card.querySelector('.quantity').textContent.trim();
+            const priceText = card.querySelector('.product-bottom b').textContent;
+            const price = Number(priceText.replace(/[^0-9.]/g, ''));
+
+            if (!cart[id]) {
+                cart[id] = {
+                    id,
+                    name,
+                    quantityLabel,
+                    price,
+                    quantity: 0
+                };
+            }
+
+            cart[id].quantity++;
+            saveCart();
+
+            button.textContent = `ADDED (${cart[id].quantity})`;
+            window.setTimeout(() => {
+                button.textContent = 'ADD +';
+            }, 900);
+        });
+    });
+
+    document.getElementById('open-cart').addEventListener('click', openCart);
+    document.getElementById('close-cart').addEventListener('click', closeCart);
+
+    overlay.addEventListener('click', event => {
+        if (event.target === overlay) {
+            closeCart();
+        }
+    });
+
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && overlay.classList.contains('is-open')) {
+            closeCart();
+        }
+    });
+
+    renderCart();
+})();
+</script>
 
 </body>
 </html>
