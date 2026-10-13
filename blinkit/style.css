@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -30,7 +31,13 @@ a {
     color: inherit;
 }
 
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
 /* NAVBAR */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -106,16 +113,23 @@ a {
 }
 
 /* HERO */
+
 .hero {
     margin: 30px 6%;
-    padding: 48px 6%;
+    padding: 40px 6%;
     min-height: 320px;
     border-radius: 22px;
     background: linear-gradient(120deg, #e1f7d8, #fff1ad);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     overflow: hidden;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 0;
 }
 
 .tag {
@@ -159,15 +173,28 @@ a {
 }
 
 .hero-art {
-    font-size: clamp(60px, 8vw, 100px);
-    animation: float 3s ease-in-out infinite;
+    width: 42%;
+    height: 240px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px #173e2420;
 }
 
-@keyframes float {
-    50% { transform: translateY(-10px); }
+.hero-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .4s ease;
+}
+
+.hero-art:hover img {
+    transform: scale(1.05);
 }
 
 /* BENEFITS */
+
 .benefits {
     margin: 0 6% 50px;
     display: grid;
@@ -201,6 +228,7 @@ a {
 }
 
 /* SECTIONS */
+
 .section {
     margin: 45px 6%;
 }
@@ -232,6 +260,7 @@ a {
 }
 
 /* CATEGORIES */
+
 .categories {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -268,6 +297,7 @@ a {
 }
 
 /* PRODUCTS */
+
 .products {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -280,6 +310,7 @@ a {
     border-radius: 15px;
     transition: .25s;
     min-width: 0;
+    background: white;
 }
 
 .product-card:hover {
@@ -290,19 +321,31 @@ a {
 
 .product-img {
     position: relative;
-    height: 150px;
-    background: linear-gradient(135deg, #f6f8f2, #edf3e5);
+    height: 170px;
+    background: #f6f8f2;
     border-radius: 11px;
-    display: grid;
-    place-items: center;
-    font-size: 65px;
+    overflow: hidden;
     margin-bottom: 14px;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 11px;
+    transition: transform .3s ease;
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.06);
 }
 
 .discount {
     position: absolute;
     top: 9px;
     left: 9px;
+    z-index: 1;
     background: #2774d2;
     color: white;
     font-size: 9px;
@@ -312,6 +355,7 @@ a {
 }
 
 .delivery-time {
+    display: inline-block;
     font-size: 9px;
     background: #f0f2ed;
     border-radius: 5px;
@@ -367,6 +411,7 @@ a {
 }
 
 /* PROMOTION */
+
 .promo {
     margin: 55px 6%;
     padding: 35px 5%;
@@ -376,6 +421,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
+    overflow: hidden;
+}
+
+.promo > div:first-child {
+    flex: 1;
 }
 
 .promo span {
@@ -407,10 +458,22 @@ a {
 }
 
 .promo-art {
-    font-size: 65px;
+    width: 230px;
+    height: 160px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.promo-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* FOOTER */
+
 footer {
     text-align: center;
     background: var(--bg);
@@ -430,6 +493,7 @@ footer small {
 }
 
 /* RESPONSIVE */
+
 @media (max-width: 1000px) {
     .navbar {
         flex-wrap: wrap;
@@ -442,11 +506,15 @@ footer small {
     }
 
     .products {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .categories {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -476,8 +544,11 @@ footer small {
 
     .hero {
         margin: 20px 4%;
-        padding: 28px 20px;
-        min-height: 250px;
+        padding: 25px 20px;
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 22px;
     }
 
     .hero h1 {
@@ -485,17 +556,18 @@ footer small {
     }
 
     .hero p {
-        max-width: 230px;
+        max-width: 270px;
         line-height: 1.6;
     }
 
     .hero-art {
-        font-size: 40px;
+        width: 100%;
+        height: 190px;
     }
 
     .benefits {
         margin: 0 4% 35px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
     }
 
@@ -522,7 +594,7 @@ footer small {
     }
 
     .categories {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 10px;
     }
 
@@ -546,8 +618,7 @@ footer small {
     }
 
     .product-img {
-        height: 115px;
-        font-size: 52px;
+        height: 125px;
     }
 
     .add-btn {
@@ -557,6 +628,8 @@ footer small {
     .promo {
         margin: 35px 4%;
         padding: 25px 18px;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .promo h2 {
@@ -568,6 +641,7 @@ footer small {
     }
 
     .promo-art {
-        font-size: 38px;
+        width: 100%;
+        height: 170px;
     }
 }

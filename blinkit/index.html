@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashBasket - Grocery Delivery</title>
+    <title>SatvikMart - Grocery Delivery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="navbar">
-    <a href="#" class="logo">flash<span>basket</span></a>
+    <a href="#" class="logo">Satvik<span>Mart</span></a>
 
     <div class="location">
         <strong>Delivery in 10 minutes</strong>
@@ -21,7 +21,7 @@
         🔍 <input type="search" placeholder="Search for groceries...">
     </div>
 
-    <a href="#" class="login">Login</a>
+    <a href="login.html" class="login">Login</a>
     <a href="#products" class="cart">🛒 My Cart</a>
 </header>
 
@@ -29,18 +29,29 @@
     <section class="hero">
         <div class="hero-content">
             <span class="tag">FRESHNESS AT YOUR DOORSTEP</span>
-            <h1>Groceries delivered<br><span>at lightning speed.</span></h1>
+            <h1>Groceries delivered<br>
+                <span>at lightning speed.</span>
+            </h1>
             <p>Fresh food, daily essentials and exciting deals.</p>
             <a href="#products" class="shop-btn">Shop Now →</a>
         </div>
-        <div class="hero-art">🛒 🥑 🍎</div>
+
+        <div class="hero-art">
+            <img
+                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=85"
+                alt="Fresh vegetables at a grocery market">
+        </div>
     </section>
 
     <section class="benefits">
-        <div>⚡ <span><b>10-minute delivery</b><small>Fast & convenient</small></span></div>
-        <div>🥬 <span><b>Fresh products</b><small>Quality guaranteed</small></span></div>
-        <div>💰 <span><b>Best prices</b><small>Save every day</small></span></div>
-        <div>🎁 <span><b>Special offers</b><small>Deals you'll love</small></span></div>
+        <div>⚡ <span><b>10-minute delivery</b>
+            <small>Fast & convenient</small></span></div>
+        <div>🥬 <span><b>Fresh products</b>
+            <small>Quality guaranteed</small></span></div>
+        <div>💰 <span><b>Best prices</b>
+            <small>Save every day</small></span></div>
+        <div>🎁 <span><b>Special offers</b>
+            <small>Deals you'll love</small></span></div>
     </section>
 
     <section class="section">
@@ -52,12 +63,12 @@
         </div>
 
         <div class="categories">
-            <a href="#products"><span>🍎</span><b>Fruits</b></a>
-            <a href="#products"><span>🥦</span><b>Vegetables</b></a>
-            <a href="#products"><span>🥛</span><b>Dairy</b></a>
-            <a href="#products"><span>🍞</span><b>Bakery</b></a>
-            <a href="#products"><span>🍪</span><b>Snacks</b></a>
-            <a href="#products"><span>🧃</span><b>Drinks</b></a>
+            <a href="#apples"><span>🍎</span><b>Fruits</b></a>
+            <a href="#broccoli"><span>🥦</span><b>Vegetables</b></a>
+            <a href="#milk"><span>🥛</span><b>Dairy</b></a>
+            <a href="#cookies"><span>🍞</span><b>Bakery</b></a>
+            <a href="#cookies"><span>🍪</span><b>Snacks</b></a>
+            <a href="#juice"><span>🧃</span><b>Drinks</b></a>
         </div>
     </section>
 
@@ -71,109 +82,127 @@
         </div>
 
         <div class="products">
-            <article class="product-card">
+
+            <article class="product-card" id="milk">
                 <div class="product-img">
-                    <span class="discount">20% OFF</span>🥛
+                    <span class="discount">20% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh milk">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Cow Milk</h3>
                 <p class="quantity">500 ml</p>
                 <div class="product-bottom">
                     <div><b>₹32</b><del>₹40</del></div>
-                    <a href="#products" class="add-btn">ADD +</a>
+                    <button class="add-btn" type="button">ADD +</button>
                 </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" id="apples">
                 <div class="product-img">
-                    <span class="discount">23% OFF</span>🍎
+                    <span class="discount">23% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh red apples">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Red Apples</h3>
                 <p class="quantity">4 pieces</p>
                 <div class="product-bottom">
                     <div><b>₹100</b><del>₹130</del></div>
-                    <a href="#products" class="add-btn">ADD +</a>
+                    <button class="add-btn" type="button">ADD +</button>
                 </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" id="broccoli">
                 <div class="product-img">
-                    <span class="discount">18% OFF</span>🥦
+                    <span class="discount">18% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh green broccoli">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Broccoli</h3>
                 <p class="quantity">1 piece</p>
                 <div class="product-bottom">
                     <div><b>₹45</b><del>₹55</del></div>
-                    <a href="#products" class="add-btn">ADD +</a>
+                    <button class="add-btn" type="button">ADD +</button>
                 </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" id="cookies">
                 <div class="product-img">
-                    <span class="discount">20% OFF</span>🍪
+                    <span class="discount">20% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=500&q=80"
+                         alt="Chocolate cookies">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Chocolate Cookies</h3>
                 <p class="quantity">200 g</p>
                 <div class="product-bottom">
                     <div><b>₹40</b><del>₹50</del></div>
-                    <a href="#products" class="add-btn">ADD +</a>
+                    <button class="add-btn" type="button">ADD +</button>
                 </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" id="bananas">
                 <div class="product-img">
-                    <span class="discount">22% OFF</span>🍌
+                    <span class="discount">22% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh bananas">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Bananas</h3>
                 <p class="quantity">6 pieces</p>
                 <div class="product-bottom">
                     <div><b>₹35</b><del>₹45</del></div>
-                    <a href="#products" class="add-btn">ADD +</a>
+                    <button class="add-btn" type="button">ADD +</button>
                 </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" id="tomatoes">
                 <div class="product-img">
-                    <span class="discount">17% OFF</span>🍅
+                    <span class="discount">17% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh tomatoes">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Fresh Tomatoes</h3>
                 <p class="quantity">500 g</p>
                 <div class="product-bottom">
                     <div><b>₹25</b><del>₹30</del></div>
-                    <a href="#products" class="add-btn">ADD +</a>
+                    <button class="add-btn" type="button">ADD +</button>
                 </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" id="cheese">
                 <div class="product-img">
-                    <span class="discount">18% OFF</span>🧀
+                    <span class="discount">18% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=500&q=80"
+                         alt="Cheese">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Cheese Slices</h3>
                 <p class="quantity">200 g</p>
                 <div class="product-bottom">
                     <div><b>₹90</b><del>₹110</del></div>
-                    <a href="#products" class="add-btn">ADD +</a>
+                    <button class="add-btn" type="button">ADD +</button>
                 </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" id="juice">
                 <div class="product-img">
-                    <span class="discount">17% OFF</span>🧃
+                    <span class="discount">17% OFF</span>
+                    <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=500&q=80"
+                         alt="Fresh orange juice">
                 </div>
                 <span class="delivery-time">⚡ 10 MIN</span>
                 <h3>Orange Juice</h3>
                 <p class="quantity">1 litre</p>
                 <div class="product-bottom">
                     <div><b>₹75</b><del>₹90</del></div>
-                    <a href="#products" class="add-btn">ADD +</a>
+                    <button class="add-btn" type="button">ADD +</button>
                 </div>
             </article>
+
         </div>
     </section>
 
@@ -184,14 +213,19 @@
             <p>Discover your everyday favourites at amazing prices.</p>
             <a href="#products">Explore products →</a>
         </div>
-        <div class="promo-art">🎁 🥑</div>
+
+        <div class="promo-art">
+            <img
+                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80"
+                alt="Fresh grocery selection">
+        </div>
     </section>
 </main>
 
 <footer>
-    <h2 class="logo">flash<span>basket</span></h2>
+    <h2 class="logo">Satvik<span>Mart</span></h2>
     <p>Fresh groceries. Fair prices. Fast delivery.</p>
-    <small>© 2026 FlashBasket. Demo website.</small>
+    <small>© 2026 SatvikMart. Demo website.</small>
 </footer>
 
 </body>
